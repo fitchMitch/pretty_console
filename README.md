@@ -13,7 +13,7 @@ $${\color{green} Some\space wording}$$
 
 
 ##### Colors
-where 'green' is a < color > that might be replaced with the following colors : 
+where 'green' is a < color > that might be replaced with the following colors :
 - red,
 - green (as used)
 - yellow
@@ -33,7 +33,7 @@ $${\color{green} =====>\space Some\space wording\space<=====}$$
 #### print_in_< color >
 
     PrettyConsole.print_in_<color>('x')
-    
+
 prints the following with standard system font
 $${\color{green}x}$$
 

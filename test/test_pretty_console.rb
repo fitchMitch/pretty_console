@@ -1,6 +1,5 @@
 require 'minitest/autorun'
 require 'pretty_console'
-require 'ostruct'
 
 class PrettyConsoleTest < Minitest::Test
   def setup
