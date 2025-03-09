@@ -13,4 +13,5 @@ Gem::Specification.new do |s|
   s.test_files  = s.files.grep(%r{^(test|spec|features)/})
   s.homepage    = "https://rubygems.org/gems/pretty_console"
   s.license     = "MIT"
+  s.metadata    = { "source_code_uri" => "https://github.com/fitchMitch/pretty_console" }
 end
