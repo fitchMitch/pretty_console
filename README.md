@@ -4,13 +4,15 @@ PrettyConsole adds colors to your console using the [bash colorization codes](ht
 
 ## Use
 
+#### puts_in_< color >
+
     PrettyConsole.puts_in_green('Some wording')
 
 prints the following with standard system font
 $${\color{green} Some\space wording}$$
 
 
-
+##### Colors
 where 'green' is a < color > that might be replaced with the following colors : 
 - red,
 - green (as used)
@@ -21,15 +23,23 @@ where 'green' is a < color > that might be replaced with the following colors :
 - heavy_white
 - and green
 
-Also available
+#### say_in_< color >
 
     PrettyConsole.say_in_<color>('Some wording')
 
+prints the following with standard system font
 $${\color{green} =====>\space Some\space wording\space<=====}$$
 
-    PrettyConsole.say_with_<color>_background('Some wording)
+#### print_in_< color >
 
-Finaly, `announce_task`
+    PrettyConsole.print_in_<color>('x')
+    
+prints the following with standard system font
+$${\color{green}x}$$
+
+    PrettyConsole.say_with_<color>_background('Some wording')
+
+#### announce_task
 
     desc 'your task'
     task your_task: :environment do |task|
@@ -38,10 +48,8 @@ Finaly, `announce_task`
       end
     end
 
-- prints a colored header and footer
-- displays the time elapased inside the block
-
-
+- prints a colored header with the task name and a footer
+- it displays the time elapased inside the block
 
 ## Installation
 
