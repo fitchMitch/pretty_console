@@ -37,6 +37,9 @@ $${\color{green} =====>\space Some\space wording\space<=====}$$
 prints the following with standard system font
 $${\color{green}x}$$
 
+
+#### say_with_color_background
+
     PrettyConsole.say_with_<color>_background('Some wording')
 
 #### announce_task
