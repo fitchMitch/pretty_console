@@ -2,12 +2,12 @@
 
 PrettyConsole adds colors to your console using the [bash colorization codes](http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html).
 
-## Use
+## Usage
 
 #### puts_in_< color >
-
-    PrettyConsole.puts_in_green('Some wording')
-
+```Ruby
+self.puts_in_green('Some wording')
+```
 prints the following with standard system font
 $${\color{green} Some\space wording}$$
 
@@ -25,14 +25,18 @@ where 'green' is a < color > that might be replaced with the following colors :
 
 #### say_in_< color >
 
-    PrettyConsole.say_in_<color>('Some wording')
+```Ruby
+self.say_in_<color>('Some wording')
+```
 
 prints the following with standard system font
 $${\color{green} =====>\space Some\space wording\space<=====}$$
 
 #### print_in_< color >
 
-    PrettyConsole.print_in_<color>('x')
+```Ruby
+self.print_in_<color>('x')
+```
 
 prints the following with standard system font
 $${\color{green}x}$$
@@ -40,16 +44,20 @@ $${\color{green}x}$$
 
 #### say_with_color_background
 
-    PrettyConsole.say_with_<color>_background('Some wording')
+```Ruby
+self.say_with_<color>_background('Some wording')
+```
 
 #### announce_task
 
-    desc 'your task'
-    task your_task: :environment do |task|
-      PrettyConsole.announce_task(task or string) do
-        ...your task code
-      end
-    end
+```Ruby
+desc 'your task'
+task your_task: :environment do |task|
+  self.announce_task(task or string) do
+    ...your task code
+  end
+end
+```
 
 - prints a colored header with the task name and a footer
 - it displays the time elapased inside the block
